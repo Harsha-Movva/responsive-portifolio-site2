@@ -1,0 +1,71 @@
+/* Reset */
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
+body { line-height: 1.6; scroll-behavior: smooth; }
+
+/* Navbar */
+.navbar {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 1rem 2rem; background: rgba(0,0,0,0.7); position: fixed; width: 100%; z-index: 100;
+}
+.navbar .logo { color: #fff; font-size: 1.5rem; text-decoration: none; }
+.nav-links { list-style: none; display: flex; }
+.nav-links li { margin-left: 20px; }
+.nav-links a { color: #fff; text-decoration: none; transition: 0.3s; }
+.nav-links a:hover { color: #ff9800; }
+
+/* Hero Section */
+.hero {
+  height: 100vh;
+  background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+  display: flex; flex-direction: column; justify-content: center; align-items: center;
+  text-align: center; color: #fff; position: relative;
+  padding-top: 100px;
+}
+
+.profile-container {
+  position: absolute; top: 30px; left: 50%; transform: translateX(-50%);
+}
+
+.profile-img {
+  width: 150px; height: 150px; border-radius: 50%; border: 4px solid #fff; object-fit: cover;
+}
+
+.hero h1 span { color: #ff9800; }
+.hero p { margin: 10px 0; font-size: 1.2rem; }
+.btn {
+  display: inline-block; padding: 10px 20px;
+  background: #ff9800; color: #fff; text-decoration: none; border-radius: 5px; margin-top: 15px;
+  transition: 0.3s;
+}
+.btn:hover { background: #e07b00; }
+
+/* Sections */
+section { padding: 100px 20px; max-width: 1000px; margin: auto; }
+
+/* About */
+.about { background: #f4f4f4; border-radius: 10px; text-align: center; }
+.about h2 { margin-bottom: 20px; }
+
+/* Projects */
+.projects h2 { text-align: center; margin-bottom: 30px; }
+.project-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+.project-card {
+  background: #fff; padding: 15px; border-radius: 10px;
+  text-align: center; box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+.project-card img { width: 100%; border-radius: 10px; }
+
+/* Contact */
+.contact { background: #f4f4f4; border-radius: 10px; text-align: center; }
+form { display: flex; flex-direction: column; gap: 15px; max-width: 500px; margin: auto; }
+input, textarea { padding: 10px; border: 1px solid #ccc; border-radius: 5px; width: 100%; }
+button { cursor: pointer; padding: 10px; background: #ff9800; color: #fff; border: none; border-radius: 5px; }
+button:hover { background: #e07b00; }
+
+/* Footer */
+footer { text-align: center; padding: 20px; background: #333; color: #fff; margin-top: 50px; }
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-links { flex-direction: column; background: rgba(0,0,0,0.8); position: fixed; top: 60px; left: -100%; width: 100%; transition: 0.3s; }
+}
