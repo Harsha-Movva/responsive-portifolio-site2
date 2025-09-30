@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Friend's Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+      <a href="#home" class="logo">MyPortfolio</a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section with unique background -->
+  <section id="home" class="hero">
+    <div class="profile-container">
+      <img src="assets/profile.jpg" alt="Profile Picture" class="profile-img">
+    </div>
+    <h1>Hello, I'm <span>Your Friend's Name</span></h1>
+    <p>Data Science Student | Web Developer | Learner</p>
+    <a href="#projects" class="btn">View My Work</a>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <p>Hello! I am a passionate Data Science student who loves solving problems with AI, coding, and building cool projects. My interests include Machine Learning, Web Development, and Cloud Computing.</p>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects">
+    <h2>My Projects</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <img src="assets/project1.png" alt="Project 1">
+        <h3>Cpp Library Manager</h3>
+        <p>A tool to manage libraries in C++ projects easily.</p>
+      </div>
+      <div class="project-card">
+        <img src="assets/project2.png" alt="Project 2">
+        <h3>Android Task Tracker</h3>
+        <p>An app to track tasks with notifications and reminders.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <form id="contactForm">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn">Send</button>
+    </form>
+    <p id="formMessage"></p>
+  </section>
+
+  <footer>
+    <p>© 2025 Your Friend's Name | Built with ❤️</p>
+  </footer>
+
+</body>
+</html>
